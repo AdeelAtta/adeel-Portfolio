@@ -9,8 +9,8 @@ export function PortfolioSection() {
         "Design system development, feature implementation, and performance optimization for a large-scale AI mental health platform serving 30,000+ active users.",
       tag: "AI / Healthcare",
       logo: "/images/studio-logo.svg",
-      bgColor: "bg-[#6366F1]",
-      illustration: "/images/studio-workspace.svg",
+      bgColor: "bg-[#F5E6E0]",
+      illustration: "/images/mentalyc-webapp.webp",
     },
     {
       title: "Mentalyc Chrome Extension",
