@@ -9,9 +9,10 @@ export function PortfolioSection() {
         "Design system development, feature implementation, and performance optimization for a large-scale AI mental health platform serving 30,000+ active users.",
       tag: "AI / Healthcare",
       logo: "/images/studio-logo.svg",
-      bgColor: "bg-[#6366F1]",
-      illustration: "/images/studio-workspace.svg",
+      bgColor: "bg-[#F5E6E0]",
+      illustration: "/images/mentalyc-webapp.webp",
       link: "https://mentalyc.com",
+      containImage: true,
     },
     {
       title: "Mentalyc Chrome Extension",
@@ -102,12 +103,14 @@ export function PortfolioSection() {
                 )}
               </div>
 
-              <div className={`${project.bgColor} relative overflow-hidden min-h-[250px] md:min-h-[500px]`}>
+              <div className={`${project.bgColor} relative overflow-hidden min-h-[250px] md:min-h-[500px] flex items-center justify-center p-4`}>
                 <Image
                   src={project.illustration || "/placeholder.svg"}
                   alt={project.title}
                   fill
-                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                  className={`transition-transform duration-500 ease-out group-hover:scale-105 ${
+                    project.containImage ? "object-contain p-4" : "object-cover"
+                  }`}
                 />
               </div>
             </div>
