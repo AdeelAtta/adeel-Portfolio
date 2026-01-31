@@ -13,7 +13,7 @@ export function ExperienceSection() {
       icon: "/images/agency.png",
     },
     {
-      period: "Feb 2023 - Apr 2025",
+      period: "Feb 2023 - Mar 2025",
       company: "Analog Mutation",
       title: "Frontend Developer",
       description:
