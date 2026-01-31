@@ -9,8 +9,10 @@ export function PortfolioSection() {
         "Design system development, feature implementation, and performance optimization for a large-scale AI mental health platform serving 30,000+ active users.",
       tag: "AI / Healthcare",
       logo: "/images/studio-logo.svg",
-      bgColor: "bg-[#6366F1]",
-      illustration: "/images/studio-workspace.svg",
+      bgColor: "bg-[#F5E6E0]",
+      illustration: "/images/mentalyc-webapp.webp",
+      link: "https://mentalyc.com",
+      containImage: true,
     },
     {
       title: "Mentalyc Chrome Extension",
@@ -18,8 +20,10 @@ export function PortfolioSection() {
         "Browser extension enabling automated clinical note transfer to EHR systems via secure API integration, streamlining therapist workflows.",
       tag: "Browser Extension",
       logo: "/images/venture-logo.svg",
-      bgColor: "bg-[#2F81F7]",
-      illustration: "/images/venture-workspace.svg",
+      bgColor: "bg-[#FDF5F3]",
+      illustration: "/images/mentalyc-extension.png",
+      link: "https://chrome.google.com/webstore/detail/mentalyc/jhlkppjeaacmnbpdmlflkknfjfjkpfgj",
+      containImage: true,
     },
   ]
 
@@ -82,18 +86,32 @@ export function PortfolioSection() {
                   {project.description}
                 </p>
 
-                <span className="flex items-center gap-2 font-semibold text-[#0B0B0B] text-sm md:text-base">
-                  Production Application
-                  <ArrowRight className="w-4 h-4" />
-                </span>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 font-semibold text-[#0B0B0B] hover:gap-3 transition-all text-sm md:text-base"
+                  >
+                    {project.link.includes("chrome.google.com") ? "View on Chrome Web Store" : "View Production App"}
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                ) : (
+                  <span className="flex items-center gap-2 font-semibold text-[#0B0B0B] text-sm md:text-base">
+                    Production Application
+                    <ArrowRight className="w-4 h-4" />
+                  </span>
+                )}
               </div>
 
-              <div className={`${project.bgColor} relative overflow-hidden min-h-[250px] md:min-h-[500px]`}>
+              <div className={`${project.bgColor} relative overflow-hidden min-h-[250px] md:min-h-[500px] flex items-center justify-center p-4`}>
                 <Image
                   src={project.illustration || "/placeholder.svg"}
                   alt={project.title}
                   fill
-                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                  className={`transition-transform duration-500 ease-out group-hover:scale-105 ${
+                    project.containImage ? "object-contain p-4" : "object-cover"
+                  }`}
                 />
               </div>
             </div>
