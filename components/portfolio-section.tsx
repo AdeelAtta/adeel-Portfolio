@@ -9,8 +9,9 @@ export function PortfolioSection() {
         "Design system development, feature implementation, and performance optimization for a large-scale AI mental health platform serving 30,000+ active users.",
       tag: "AI / Healthcare",
       logo: "/images/studio-logo.svg",
-      bgColor: "bg-[#F5E6E0]",
-      illustration: "/images/mentalyc-webapp.webp",
+      bgColor: "bg-[#6366F1]",
+      illustration: "/images/studio-workspace.svg",
+      link: "https://mentalyc.com",
     },
     {
       title: "Mentalyc Chrome Extension",
@@ -20,6 +21,7 @@ export function PortfolioSection() {
       logo: "/images/venture-logo.svg",
       bgColor: "bg-[#2F81F7]",
       illustration: "/images/venture-workspace.svg",
+      link: null,
     },
   ]
 
@@ -82,10 +84,22 @@ export function PortfolioSection() {
                   {project.description}
                 </p>
 
-                <span className="flex items-center gap-2 font-semibold text-[#0B0B0B] text-sm md:text-base">
-                  Production Application
-                  <ArrowRight className="w-4 h-4" />
-                </span>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 font-semibold text-[#0B0B0B] hover:gap-3 transition-all text-sm md:text-base"
+                  >
+                    View Production App
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                ) : (
+                  <span className="flex items-center gap-2 font-semibold text-[#0B0B0B] text-sm md:text-base">
+                    Production Application
+                    <ArrowRight className="w-4 h-4" />
+                  </span>
+                )}
               </div>
 
               <div className={`${project.bgColor} relative overflow-hidden min-h-[250px] md:min-h-[500px]`}>
