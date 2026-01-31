@@ -20,9 +20,10 @@ export function PortfolioSection() {
         "Browser extension enabling automated clinical note transfer to EHR systems via secure API integration, streamlining therapist workflows.",
       tag: "Browser Extension",
       logo: "/images/venture-logo.svg",
-      bgColor: "bg-[#2F81F7]",
-      illustration: "/images/venture-workspace.svg",
-      link: null,
+      bgColor: "bg-[#FDF5F3]",
+      illustration: "/images/mentalyc-extension.png",
+      link: "https://chrome.google.com/webstore/detail/mentalyc/jhlkppjeaacmnbpdmlflkknfjfjkpfgj",
+      containImage: true,
     },
   ]
 
@@ -92,7 +93,7 @@ export function PortfolioSection() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 font-semibold text-[#0B0B0B] hover:gap-3 transition-all text-sm md:text-base"
                   >
-                    View Production App
+                    {project.link.includes("chrome.google.com") ? "View on Chrome Web Store" : "View Production App"}
                     <ArrowRight className="w-4 h-4" />
                   </a>
                 ) : (
