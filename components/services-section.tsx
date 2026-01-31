@@ -15,18 +15,18 @@ export function ServicesSection() {
       image: "/images/ui-ux-design.svg",
     },
     {
+      title: "Scalable Design Systems",
+      description: "Building reusable component libraries and design systems that ensure consistency, speed up development, and scale across large applications.",
+      image: "/images/product-design.svg",
+    },
+    {
       title: "TailwindCSS",
       description: "Rapid UI development with utility-first CSS. Creating responsive, pixel-perfect designs that match any specification.",
-      image: "/images/product-design.svg",
+      image: "/images/user-research.svg",
     },
     {
       title: "API Integration",
       description: "REST APIs, authentication systems (Auth0, multi-role auth), and seamless third-party service integrations.",
-      image: "/images/user-research.svg",
-    },
-    {
-      title: "Testing & Automation",
-      description: "BDD testing with Cucumber, automated workflows, and CI/CD pipelines with GitHub Actions for reliable deployments.",
       image: "/images/motion-graphics.svg",
     },
   ]
