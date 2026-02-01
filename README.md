@@ -1,30 +1,120 @@
-# Paperfolio landing page
+# Adeel Atta - Frontend Engineer Portfolio
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+A modern, responsive portfolio website showcasing projects, experience, and services as a frontend engineer specializing in React, Next.js, and AI-powered applications.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/helpinggeeks/v0-paperfolio-landing-page-w6)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/IKJ21kToIah)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://adeelatta.dev)
+[![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+
+## Live Site
+
+**[https://adeelatta.dev](https://adeelatta.dev)**
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+This is a personal portfolio website built with modern web technologies to showcase:
+- Professional experience and background
+- Featured portfolio projects
+- Services offered
+- Blog/Articles section
+- Testimonials
+- Contact and newsletter signup
 
-## Deployment
+## Tech Stack
 
-Your project is live at:
+- **Framework**: [Next.js](https://nextjs.org) 15.5+
+- **Language**: [TypeScript](https://www.typescriptlang.org)
+- **Styling**: [TailwindCSS](https://tailwindcss.com) + [PostCSS](https://postcss.org)
+- **UI Components**: [Radix UI](https://www.radix-ui.com)
+- **Form Handling**: [React Hook Form](https://react-hook-form.com)
+- **Animations**: [Embla Carousel](https://www.embla-carousel.com)
+- **Analytics**: [Vercel Analytics](https://vercel.com/analytics)
+- **Deployment**: [Vercel](https://vercel.com)
 
-**[https://vercel.com/helpinggeeks/v0-paperfolio-landing-page-w6](https://vercel.com/helpinggeeks/v0-paperfolio-landing-page-w6)**
+## Features
 
-## Build your app
+✨ **SEO Optimized** - Structured data, meta tags, and Open Graph support
+🎨 **Modern Design** - Clean, responsive UI with smooth animations
+⚡ **Performance** - Optimized images, lazy loading, and fast page loads
+📱 **Mobile Friendly** - Fully responsive across all devices
+🌙 **Dark Mode** - Theme support with next-themes
+🔗 **Domain Redirect** - www.adeelatta.dev redirects to adeelatta.dev
 
-Continue building your app on:
+## Getting Started
 
-**[https://v0.app/chat/IKJ21kToIah](https://v0.app/chat/IKJ21kToIah)**
+### Prerequisites
+- Node.js 18+ or pnpm 8+
 
-## How It Works
+### Installation
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+```bash
+# Using pnpm (recommended)
+pnpm install
+
+# Or using npm
+npm install
+```
+
+### Development
+
+```bash
+pnpm dev
+# Open http://localhost:3000
+```
+
+### Build
+
+```bash
+pnpm build
+pnpm start
+```
+
+## Project Structure
+
+```
+├── app/                 # Next.js app directory
+│   ├── layout.tsx      # Root layout with metadata
+│   ├── page.tsx        # Home page
+│   └── globals.css     # Global styles
+├── components/         # React components
+│   ├── hero-section.tsx
+│   ├── portfolio-section.tsx
+│   ├── experience-section.tsx
+│   ├── services-section.tsx
+│   ├── testimonials-section.tsx
+│   └── ui/            # Reusable UI components
+├── public/            # Static assets and favicons
+├── styles/            # CSS files
+├── lib/               # Utility functions
+└── next.config.mjs    # Next.js configuration
+```
+
+## SEO & Performance
+
+- ✅ HTML, Head, and Body tags properly structured
+- ✅ Favicon support (SVG, PNG, Apple, Android)
+- ✅ Schema.org structured data (Person, Organization, Breadcrumb)
+- ✅ Open Graph and Twitter card metadata
+- ✅ Robots.txt and sitemap.xml
+- ✅ Domain redirect configuration (301)
+
+## Scripts
+
+```bash
+pnpm dev      # Start development server
+pnpm build    # Build for production
+pnpm start    # Start production server
+pnpm lint     # Run ESLint
+```
+
+## Author
+
+**Adeel Atta**
+- Website: [adeelatta.dev](https://adeelatta.dev)
+- Email: adeelatta2000@gmail.com
+- GitHub: [@AdeelAtta](https://github.com/AdeelAtta)
+- LinkedIn: [Adeel Atta](https://www.linkedin.com/in/adeel-atta/)
+
+## License
+
+This project is private and for personal use.
