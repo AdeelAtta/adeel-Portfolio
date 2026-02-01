@@ -39,7 +39,7 @@ export function ArticlesSection() {
               <div className="flex items-center gap-3 md:gap-4">
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-[#FDB927] border-2 border-black rounded-full overflow-hidden shrink-0">
                   <Image
-                    src="/images/design-mode/Gemini_Generated_Image_zh09lpzh09lpzh09.png"
+                    src="/images/design-mode/Gemini_Generated_Image_wrhwklwrhwklwrhw.png"
                     alt="John Carter"
                     width={64}
                     height={64}

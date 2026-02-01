@@ -4,7 +4,7 @@ export function StructuredData() {
     "@type": "Person",
     name: "Adeel Atta",
     url: "https://adeelatta.dev",
-    image: "https://adeelatta.dev/images/design-mode/Gemini_Generated_Image_zh09lpzh09lpzh09.png",
+    image: "https://adeelatta.dev/images/design-mode/Gemini_Generated_Image_wrhwklwrhwklwrhw.png",
     description: "Frontend Engineer building scalable, AI-powered web applications. Expert in React, Next.js, and TypeScript with production experience serving 30,000+ users.",
     jobTitle: "Frontend Engineer",
     email: "adeelatta2000@gmail.com",

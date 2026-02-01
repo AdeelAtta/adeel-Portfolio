@@ -29,6 +29,10 @@ export const metadata: Metadata = {
   // canonical: "https://adeelatta.dev",
   authors: [{ name: "Adeel Atta", url: "https://adeelatta.dev" }],
   creator: "Adeel Atta",
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

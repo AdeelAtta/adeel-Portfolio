@@ -56,7 +56,7 @@ export function HeroSection() {
         <div className="flex justify-center md:justify-end">
           <div className="relative w-full max-w-md aspect-square bg-[#FDB927] border-4 border-black rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
             <img
-              src="/images/design-mode/Gemini_Generated_Image_zh09lpzh09lpzh09.png"
+              src="/images/design-mode/Gemini_Generated_Image_wrhwklwrhwklwrhw.png"
               alt="Adeel Atta - Frontend Engineer, React and Next.js specialist"
               className="w-full h-full object-cover"
             />
