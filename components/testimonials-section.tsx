@@ -61,7 +61,7 @@ export function TestimonialsSection() {
             return (
               <div
                 key={index}
-                className="bg-white border-[3px] border-black rounded-[24px] p-6 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all"
+                className="bg-white border-[3px] border-black rounded-3xl p-6 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all"
               >
                 <div
                   className={`${achievement.color} w-14 h-14 rounded-full flex items-center justify-center mb-4 border-2 border-black`}

@@ -9,10 +9,10 @@ export function Footer() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-12 md:mb-16 relative">
             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-              <div className="w-24 h-24 md:w-36 md:h-36 rounded-full flex items-center justify-center flex-shrink-0 relative">
+              <div className="w-24 h-24 md:w-36 md:h-36 rounded-full flex items-center justify-center shrink-0 relative">
                 <Image
                   src="/images/newsletter-icon.png"
-                  alt="Contact"
+                  alt="Contact illustration - Let's work together section"
                   width={180}
                   height={180}
                   className="object-cover"
@@ -40,7 +40,7 @@ export function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mb-12">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0">
                   <span className="text-black font-bold text-lg">A</span>
                 </div>
                 <span className="text-lg md:text-xl font-bold">Adeel Atta</span>

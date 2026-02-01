@@ -1,0 +1,14 @@
+# Allow all bots to crawl the site
+User-agent: *
+Allow: /
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+
+# Disallow crawling of specific files/folders if needed
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://adeelatta.dev/sitemap.xml

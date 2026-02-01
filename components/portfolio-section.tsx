@@ -71,18 +71,18 @@ export function PortfolioSection() {
           {featuredProjects.map((project, index) => (
             <div
               key={index}
-              className="group grid md:grid-cols-2 bg-white border-[3px] border-black rounded-[32px] overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all"
+              className="group grid md:grid-cols-2 bg-white border-[3px] border-black rounded-4xl overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all"
             >
               <div className="p-6 md:p-12 flex flex-col justify-center bg-white">
                 <span className="inline-block bg-black text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-6 w-fit">
                   {project.tag}
                 </span>
 
-                <h3 className="text-xl md:text-[28px] font-bold mb-4 leading-tight md:leading-[40px] text-[#0B0B0B]">
+                <h3 className="text-xl md:text-[28px] font-bold mb-4 leading-tight md:leading-10 text-[#0B0B0B]">
                   {project.title}
                 </h3>
 
-                <p className="text-base md:text-[18px] text-[#393939] mb-8 leading-relaxed md:leading-[30px] font-medium">
+                <p className="text-base md:text-[18px] text-[#393939] mb-8 leading-relaxed md:leading-7.5 font-medium">
                   {project.description}
                 </p>
 
@@ -104,10 +104,10 @@ export function PortfolioSection() {
                 )}
               </div>
 
-              <div className={`${project.bgColor} relative overflow-hidden min-h-[250px] md:min-h-[500px] flex items-center justify-center p-4`}>
+              <div className={`${project.bgColor} relative overflow-hidden min-h-62.5 md:min-h-125 flex items-center justify-center p-4`}>
                 <Image
                   src={project.illustration || "/placeholder.svg"}
-                  alt={project.title}
+                  alt={`${project.title} - ${project.tag} project screenshot`}
                   fill
                   className={`transition-transform duration-500 ease-out group-hover:scale-105 ${
                     project.containImage ? "object-contain p-4" : "object-cover"
@@ -124,7 +124,7 @@ export function PortfolioSection() {
             {otherProjects.map((project, index) => (
               <div
                 key={index}
-                className="bg-white border-[3px] border-black rounded-[24px] p-6 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all"
+                className="bg-white border-[3px] border-black rounded-3xl p-6 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all"
               >
                 <span className="inline-block bg-[#6366F1] text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
                   {project.tag}
