@@ -34,8 +34,8 @@ export function TestimonialsSection() {
     },
     {
       icon: Award,
-      title: "Visionary Award",
-      description: "LLM Hackathon for Materials Science & Chemistry",
+      title: "Wordpress Plugin Hackathon",
+      description: "socialmedia icons plugin",
       color: "bg-[#10B981]",
       url: "https://www.linkedin.com/in/adeel-atta/details/certifications/1724527785101/single-media-viewer/?profileId=ACoAADEzf0IBN3mJCSm42DzvYL8IlPhLNTOqo1k",
     },

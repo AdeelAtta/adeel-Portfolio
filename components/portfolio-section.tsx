@@ -1,5 +1,6 @@
 import { ArrowRight, Github } from "lucide-react"
 import Image from "next/image"
+import Script from "next/script"
 
 export function PortfolioSection() {
   const featuredProjects = [
@@ -30,7 +31,8 @@ export function PortfolioSection() {
   const otherProjects = [
     {
       title: "EthicalNode Wallet",
-      description: "Chrome extension for a decentralized wallet enabling secure blockchain transactions.",
+      description:
+        "Chrome extension for a decentralized wallet where I worked as the Frontend Developer, enabling secure blockchain transactions directly in the browser.",
       tag: "Web3",
     },
     {
@@ -58,6 +60,62 @@ export function PortfolioSection() {
   return (
     <section id="portfolio" className="container mx-auto px-4 py-16 md:py-24">
       <div className="max-w-7xl mx-auto">
+        <Script
+          id="projects-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              [
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  name: "Mentalyc Web App",
+                  applicationCategory: "WebApplication",
+                  operatingSystem: "Any",
+                  url: "https://mentalyc.com",
+                  description:
+                    "AI-powered mental health web application where I contributed to the design system, feature implementation, and performance optimization for 30,000+ active users.",
+                  author: {
+                    "@type": "Person",
+                    name: "Adeel Atta",
+                    url: "https://adeelatta.dev",
+                  },
+                },
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  name: "Mentalyc Chrome Extension",
+                  applicationCategory: "BrowserApplication",
+                  operatingSystem: "Chrome",
+                  url: "https://chrome.google.com/webstore/detail/mentalyc/jhlkppjeaacmnbpdmlflkknfjfjkpfgj",
+                  description:
+                    "Chrome extension that automates clinical note transfer to EHR systems via secure API integration, streamlining therapist workflows.",
+                  author: {
+                    "@type": "Person",
+                    name: "Adeel Atta",
+                    url: "https://adeelatta.dev",
+                  },
+                },
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  name: "Ethical Wallet Chrome Extension",
+                  applicationCategory: "BrowserApplication",
+                  operatingSystem: "Chrome",
+                  url: "https://chromewebstore.google.com/detail/ethical-wallet/nfaepmamdapehcbedhejbjcpnlcldodi",
+                  description:
+                    "Chrome extension wallet for Ethical Wallet where I worked as the Frontend Developer, enabling secure blockchain transactions directly in the browser.",
+                  author: {
+                    "@type": "Person",
+                    name: "Adeel Atta",
+                    url: "https://adeelatta.dev",
+                  },
+                },
+              ]
+            ),
+          }}
+        />
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Featured <span className="bg-[#FFC224] text-black px-3 py-1 inline-block">projects</span>

@@ -21,7 +21,8 @@ const onest = Onest({
 
 export const metadata: Metadata = {
   title: "Adeel Atta - Frontend Engineer | React, Next.js, AI",
-  description: "Frontend Engineer building scalable, AI-powered web applications. Expert in React, Next.js, and TypeScript with production experience serving 30,000+ users.",
+  description:
+    "Frontend Engineer based in Pakistan building scalable, AI-powered web applications and dashboards. Expert in React, Next.js, and TypeScript with production experience serving 30,000+ users.",
   keywords: "frontend engineer, react developer, next.js, typescript, web development, ai, full stack",
   generator: "v0.app",
   viewport: "width=device-width, initial-scale=1",
@@ -69,8 +70,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adeel Atta - Frontend Engineer",
-    description: "Frontend Engineer building scalable, AI-powered web applications. Expert in React, Next.js, and TypeScript.",
+    title: "Adeel Atta - Frontend Engineer | React, Next.js, AI",
+    description:
+      "Frontend Engineer building scalable, AI-powered web applications and dashboards using React, Next.js, and TypeScript.",
     images: ["https://adeelatta.dev/images/og-image.png"],
     creator: "@adeelatta",
   },
@@ -95,6 +97,7 @@ export default function RootLayout({
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://adeelatta.dev#person",
     name: "Adeel Atta",
     url: "https://adeelatta.dev",
     image: "https://adeelatta.dev/images/design-mode/63407fbdc2d4ac5270385fd4_home-he.png",
@@ -120,6 +123,7 @@ export default function RootLayout({
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://adeelatta.dev#organization",
     name: "Adeel Atta",
     url: "https://adeelatta.dev",
     logo: "https://adeelatta.dev/images/logo.png",
@@ -160,9 +164,38 @@ export default function RootLayout({
     ],
   }
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Adeel Atta Portfolio",
+    url: "https://adeelatta.dev",
+    inLanguage: "en",
+    description:
+      "Portfolio of Adeel Atta, a Frontend Engineer specializing in React, Next.js, TypeScript, and AI-powered web applications.",
+  }
+
+  const webpageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Adeel Atta - Frontend Engineer | React, Next.js, AI",
+    url: "https://adeelatta.dev",
+    inLanguage: "en",
+    description:
+      "Frontend Engineer based in Pakistan building scalable, AI-powered web applications and dashboards with React, Next.js, and TypeScript.",
+    isPartOf: {
+      "@type": "WebSite",
+      url: "https://adeelatta.dev",
+      name: "Adeel Atta Portfolio",
+    },
+    about: {
+      "@id": "https://adeelatta.dev#person",
+    },
+  }
+
   return (
     <html lang="en">
       <head>
+        <meta name="msvalidate.01" content="F263C1A14AD1A34C4F0D1BA10E0D156F" />
         <Script
           id="person-schema"
           type="application/ld+json"
@@ -179,6 +212,18 @@ export default function RootLayout({
           id="breadcrumb-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+          strategy="afterInteractive"
+        />
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+          strategy="afterInteractive"
+        />
+        <Script
+          id="webpage-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
           strategy="afterInteractive"
         />
       </head>
