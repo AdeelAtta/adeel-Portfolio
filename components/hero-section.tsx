@@ -38,6 +38,7 @@ export function HeroSection() {
               href="https://github.com/AdeelAtta"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Adeel Atta's GitHub profile"
               className="w-12 h-12 bg-[#0B0B0B] rounded-full flex items-center justify-center hover:bg-black/80 transition-colors"
             >
               <Github className="w-5 h-5 text-white" />
@@ -46,6 +47,7 @@ export function HeroSection() {
               href="https://www.linkedin.com/in/adeel-atta/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Adeel Atta's LinkedIn profile"
               className="w-12 h-12 bg-[#2F81F7] rounded-full flex items-center justify-center hover:bg-[#2F81F7]/80 transition-colors"
             >
               <Linkedin className="w-5 h-5 text-white" />

@@ -15,7 +15,10 @@ export function Navigation() {
     <>
       {/* Desktop Navigation */}
       <div className="hidden md:block container mx-auto px-4 pt-8 pb-4">
-        <nav className="flex items-center justify-between bg-white border-4 border-black rounded-xl px-5 py-3 max-w-2xl mx-auto shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+        <nav
+          className="flex items-center justify-between bg-white border-4 border-black rounded-xl px-5 py-3 max-w-2xl mx-auto shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+          aria-label="Primary navigation"
+        >
           <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center shrink-0">
             <span className="text-white font-bold text-lg">A</span>
           </div>
@@ -33,7 +36,10 @@ export function Navigation() {
           </div>
 
           <a href="mailto:adeelatta2000@gmail.com">
-            <Button className="bg-black text-white hover:bg-black/90 rounded-sm px-5 h-12 min-w-12 shrink-0">
+            <Button
+              className="bg-black text-white hover:bg-black/90 rounded-sm px-5 h-12 min-w-12 shrink-0"
+              aria-label="Contact Adeel Atta via email"
+            >
               <Mail className="w-10 h-10" strokeWidth={2.5} />
             </Button>
           </a>
@@ -50,6 +56,7 @@ export function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
+                aria-label={link.label}
                 className="group relative"
               >
                 <div className={`${link.color} text-white p-3 rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-colors flex items-center justify-center`}>
@@ -72,6 +79,7 @@ export function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
+                aria-label={link.label}
                 className="group relative"
               >
                 <div className={`${link.color} text-white p-3 rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-colors flex items-center justify-center`}>
@@ -88,7 +96,10 @@ export function Navigation() {
 
         {/* Contact Button */}
         <a href="mailto:adeelatta2000@gmail.com" className="group relative">
-          <Button className="bg-black text-white hover:bg-gray-800 rounded-full p-3 w-12 h-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center">
+          <Button
+            className="bg-black text-white hover:bg-gray-800 rounded-full p-3 w-12 h-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center"
+            aria-label="Contact Adeel Atta via email"
+          >
             <Mail className="w-6 h-6" strokeWidth={2.5} />
           </Button>
           {/* Tooltip on hover */}

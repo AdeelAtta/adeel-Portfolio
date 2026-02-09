@@ -53,6 +53,7 @@ export function Footer() {
                   href="https://github.com/AdeelAtta"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Adeel Atta's GitHub profile"
                   className="w-10 h-10 bg-[#333] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
                 >
                   <Github className="w-5 h-5" />
@@ -61,12 +62,14 @@ export function Footer() {
                   href="https://www.linkedin.com/in/adeel-atta/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Adeel Atta's LinkedIn profile"
                   className="w-10 h-10 bg-[#2F81F7] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
                   href="mailto:adeelatta2000@gmail.com"
+                  aria-label="Email Adeel Atta"
                   className="w-10 h-10 bg-[#FF6B7A] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
                 >
                   <Mail className="w-5 h-5" />
